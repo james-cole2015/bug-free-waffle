@@ -10,9 +10,9 @@ module "key_pair" {
   key_name   = "${random_pet.pet_1.id}-key"
   public_key = tls_private_key.rsa.public_key_openssh
 }
-  
-  resource "random_pet" "pet_1" {
-    length = 2
-    separator = "."
-  }
+
+resource "random_pet" "pet_1" {
+  length    = 2
+  separator = "."
+}
 
