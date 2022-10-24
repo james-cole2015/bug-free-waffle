@@ -13,5 +13,5 @@ module "key_pair" {
   
   resource "random_pet" "pet_1" {
     length = 2
-    seperator = "."
+    separator = "."
   }
