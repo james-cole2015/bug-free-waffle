@@ -15,4 +15,7 @@ resource "random_pet" "pet_1" {
   length    = var.key_length
   separator = "."
 }
-
+ module "test_module" {
+  source = "./modules/test_mod"
+  test_var = var.test_var
+ }
