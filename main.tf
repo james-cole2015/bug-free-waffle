@@ -12,7 +12,7 @@ module "key_pair" {
 }
 
 resource "random_pet" "pet_1" {
-  length    = 2
+  length    = var.key_length
   separator = "."
 }
 
